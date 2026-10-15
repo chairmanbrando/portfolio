@@ -16,7 +16,7 @@
     <div class="scroll">
       <img src={site.full} alt="{site.domain} screenshot" />
     </div>
-    <p>{site.blurb}</p>
+    <p>{@html site.blurb.replace(/\n/g, '<br>')}</p>
     <button onclick={onclose}>[ close ]</button>
   </div>
 </div>

@@ -17,7 +17,7 @@
       state I left them while others are gone or have been redesigned once or thrice.
     </p>
     <p>
-      I recently bought <a href="https://en.wikipedia.org/wiki/Vampire_Survivors">Vampire Survivors</a> and its three
+      Note: I recently bought <a href="https://en.wikipedia.org/wiki/Vampire_Survivors">Vampire Survivors</a> and its three
       main DLCs for under $8 and keep having to fight to get some of its soundtrack out of my head. Forgive me for the
       absurd pixel&shy;ated look that I remade this page into. 🤷‍♀️
     </p>
@@ -38,7 +38,7 @@
   main {
     margin: 0 auto;
     max-width: 1100px;
-    padding: 2rem 1rem 4rem;
+    padding: 4rem 1rem 8rem;
   }
 
   header {

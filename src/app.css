@@ -30,6 +30,7 @@ body {
   font-variant-ligatures: none;
   line-height: 32px;
   margin: 0;
+  text-align: justify;
 
   &:has(.backdrop) {
     overflow: hidden;

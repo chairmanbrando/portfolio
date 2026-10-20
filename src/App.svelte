@@ -10,18 +10,22 @@
   <header>
     <h2>The Web is Ephemeral</h2>
     <h1>So, here are some sites I built that may no longer exist.</h1>
-    <p>
-      I've built a lot of 'em over the years, many for local businesses in and around Richmond, VA. I'm not the designer
-      of these sites; I'm just the guy who put them together with code, mostly within the WordPress ecosystem. I haven't
-      linked to any of them since there's no telling what's going on at each domain now. Some are still active in the
-      state I left them while others have been lost to the ether or have been redesigned once or thrice. I had to dig
-      through an internet archiver or two to find half of these to take screenshots of them!
-    </p>
-    <p>
-      Note: I recently bought <a href="https://en.wikipedia.org/wiki/Vampire_Survivors">Vampire Survivors</a> and its three
-      main DLCs for under $8 and keep having to fight to get some of its soundtrack out of my head. Forgive me for the
-      absurd pixel&shy;ated look that I remade this page into. 🤷‍♀️
-    </p>
+    <section>
+      <p>
+        I've built a lot of 'em over the years, many for local businesses in and around Richmond, VA. I'm not the
+        designer of these sites; I'm just the guy who put them together with code, mostly within the WordPress
+        ecosystem. Mostly.
+      </p>
+        <p>I haven't linked to any of them since there's no telling what's going on at each domain now. Some are still
+        active in the state I left them while others have been lost to the ether or have been redesigned once or thrice.
+        I had to dig through an internet archiver or two to find at least half of these to take screenshots of them!
+      </p>
+      <p>
+        Important: I recently bought <a href="https://en.wikipedia.org/wiki/Vampire_Survivors">Vampire Survivors</a> and its
+        three main DLCs for under $8 and keep having to fight to get some of its soundtrack out of my head. Forgive me
+        for the absurd pixel&shy;ated look that I remade this page into. 🤷‍♀️
+      </p>
+    </section>
   </header>
 
   <ul class="grid">
@@ -45,9 +49,21 @@
   header {
     margin-bottom: 3rem;
 
-    @media (min-width: 1024px) {
-      column-count: 2;
-      column-gap: 2rem;
+    h1 {
+      @media (min-width: 1024px) {
+        max-width: calc(50% - 1rem);
+      }
+    }
+
+    section {
+      @media (min-width: 1024px) {
+        column-count: 2;
+        column-gap: 2rem;
+      }
+    }
+
+    p {
+      margin-top: 0;
     }
   }
 

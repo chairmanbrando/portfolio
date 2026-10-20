@@ -63,11 +63,17 @@
   }
 
   .grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
+
+    & > li {
+      flex: 1 1 300px;
+      max-width: calc((1100px - 6rem) / 3);
+    }
   }
 </style>

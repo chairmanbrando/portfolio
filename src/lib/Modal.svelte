@@ -17,7 +17,7 @@
       <img src={site.full} alt="{site.domain} screenshot" />
     </div>
     <p>{@html site.blurb.replace(/\n/g, '<br>')}</p>
-    <button onclick={onclose}>[ close ]</button>
+    <button onclick={onclose}>&times;</button>
   </div>
 </div>
 
@@ -40,9 +40,10 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    max-height: 80vh;
+    max-height: 90vh;
     max-width: 742px;
     padding: 1.5rem;
+    position: relative;
     width: 100%;
   }
 
@@ -54,6 +55,7 @@
   h3 {
     color: var(--neon);
     font-size: 0.8rem;
+    margin-top: -0.5em;
   }
 
   img {
@@ -66,12 +68,14 @@
   }
 
   button {
-    align-self: flex-end;
     background: var(--bg);
     border: var(--px) solid var(--neon);
     color: var(--neon);
     font: inherit;
-    padding: 0.25rem 0.75rem;
+    padding: 0.20rem 0.75rem;
+    position: absolute;
+    top: var(--pxn);
+    right: var(--pxn);
 
     &:hover {
       background: var(--neon);

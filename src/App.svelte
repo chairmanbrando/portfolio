@@ -9,8 +9,8 @@
 <main>
   <header>
     <h2>The Web is Ephemeral</h2>
-    <h1>So, here are some sites I built that may no longer exist.</h1>
     <section>
+      <h1>So, here are some sites I built that may no longer exist.</h1>
       <p>
         I've built a lot of 'em over the years, many for local businesses in and around Richmond, VA. I'm not the
         designer of these sites; I'm just the guy who put them together with code, mostly within the WordPress
@@ -49,16 +49,10 @@
   header {
     margin-bottom: 3rem;
 
-    h1 {
-      @media (min-width: 1024px) {
-        max-width: calc(50% - 1rem);
-      }
-    }
-
     section {
       @media (min-width: 1024px) {
         column-count: 2;
-        column-gap: 2rem;
+        column-gap: 4rem;
       }
     }
 

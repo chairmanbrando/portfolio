@@ -2,9 +2,10 @@
   --bg: #1a0b2e; /* deep purple */
   --panel: #2a1450; /* lighter purple for cards */
   --edge: #4b2a85; /* purple for quiet borders */
-  --neon: #39ff14; /* neon green */
+  --neon: #39ff14; /* neon green because it's fun */
   --text: #e6dcff; /* pale lavender for body text */
   --px: 4px; /* one "pixel" for borders and shadows */
+  --pxn: -4px; /* and the opposite in case that's needed */
 
   cursor: url('/dagger.svg') 0 0, auto;
 }

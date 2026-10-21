@@ -35,6 +35,16 @@
   </ul>
 </main>
 
+<footer>
+  <ul class="menu">
+    <li>❦ Copyright Forever by Default</li>
+    <li><a href="/">Back</a></li>
+    <li><a href="/resume">Resume</a></li>
+    <li><a href="https://chairmanbrando.org">Blog</a></li>
+    <li>#eidnind</li>
+  </ul>
+</footer>
+
 {#if selected}
   <Modal site={selected} onclose={() => (selected = null)} />
 {/if}
@@ -61,6 +71,14 @@
     }
   }
 
+  footer {
+    border-top: var(--px) solid var(--text);
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 1rem;
+    text-align: center;
+  }
+
   h1 {
     font-size: clamp(1rem, 3vw, 1.5rem);
     margin-bottom: 1.5rem;
@@ -84,6 +102,18 @@
     & > li {
       flex: 1 1 300px;
       max-width: calc((1100px - 6rem) / 3);
+    }
+  }
+
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
     }
   }
 </style>

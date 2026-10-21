@@ -1,3 +1,16 @@
+/* If webfonts are blocked (e.g. uBlock Origin) we need to adjust the fallback scale. */
+@font-face {
+  font-family: 'VT323 Fallback';
+  src: local('Courier New Bold'), local('CourierNewPS-BoldMT');
+  size-adjust: 67%;
+}
+
+@font-face {
+  font-family: 'Press Start 2P Fallback';
+  src: local('Courier New Bold'), local('CourierNewPS-BoldMT');
+  size-adjust: 166%;
+}
+
 :root {
   --bg: #1a0b2e; /* deep purple */
   --panel: #2a1450; /* lighter purple for cards */
@@ -26,12 +39,13 @@ body {
   background-position: -1px -1px;
   background-color: var(--bg);
   color: var(--text);
-  font-family: 'VT323', monospace;
-  font-size: 24px;
+  font-family: 'VT323', 'VT323 Fallback', monospace;
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.5rem);
   font-variant-ligatures: none;
-  line-height: 32px;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
   margin: 0;
-  text-align: justify;
+  word-spacing: -0.05em;
 
   &:has(.backdrop) {
     overflow: hidden;
@@ -41,10 +55,14 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Press Start 2P', monospace;
+  font-family: 'Press Start 2P', 'Press Start 2P Fallback', monospace;
   font-weight: normal;
-  line-height: 32px;
+  line-height: 1.2;
   margin: 0;
+}
+
+p {
+  text-align: justify;
 }
 
 a {

@@ -40,22 +40,30 @@
     display: flex;
     gap: 1rem;
     flex-direction: column;
-    max-height: 90vh;
+    max-height: 90dvh;
     max-width: 742px;
     padding: 1.5rem;
     position: relative;
     width: 100%;
   }
 
-  .scroll {
-    border: var(--px) solid var(--bg);
+  /* Each gets roughly half the modal's space. */
+  .scroll,
+  p {
+    flex-shrink: 0;
+    max-height: calc(45dvh - 3rem);
     overflow-y: auto;
+  }
+
+  .scroll {
+    border: var(--px) solid var(--edge);
   }
 
   h3 {
     color: var(--neon);
     font-size: 0.8rem;
-    margin-top: -0.5em;
+    margin: 0.5rem 0 1rem;
+    text-align: center;
   }
 
   img {
@@ -72,7 +80,7 @@
     border: var(--px) solid var(--neon);
     color: var(--neon);
     font: inherit;
-    padding: 0.20rem 0.75rem;
+    padding: 0 0.75rem;
     position: absolute;
     top: var(--pxn);
     right: var(--pxn);
